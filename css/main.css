@@ -1,0 +1,281 @@
+@import url("reset.css");
+@import url("typography.css");
+@import url("components.css");
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  margin: 0;
+}
+
+/* Styles for header content */
+header {
+  position: relative;
+  background: #333;
+  color: #fff;
+  padding: 12px 0;
+}
+
+header nav {
+  display: grid;
+  grid-template-columns: auto 1fr auto auto;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+header .toggle-menu {
+  color: white;
+  font-size: 22px;
+  justify-self: end;
+}
+
+.logo img {
+  max-height: 50px;
+}
+
+nav ul {
+  display: flex;
+  justify-self: center;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+nav ul li {
+  margin-left: 20px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+}
+
+.search {
+  display: flex;
+  align-items: center;
+  color: #fff;
+  cursor: pointer;
+}
+
+.search input {
+  padding: 5px 10px;
+  border: none;
+  border-radius: 3px;
+  margin-right: 10px;
+}
+
+.search i {
+  font-size: 18px;
+}
+
+/* Styles for footer content */
+footer {
+  background: #333;
+  color: #fff;
+  padding: 20px 0;
+}
+
+footer .footer-content {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+footer .footer-section {
+  margin-right: 20px;
+}
+
+footer .footer-section:last-child {
+  margin-right: 0;
+}
+
+footer h3 {
+  border-bottom: 2px solid #fff;
+  padding-bottom: 5px;
+  margin-bottom: 10px;
+}
+
+footer ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+footer ul li {
+  margin-bottom: 10px;
+}
+
+footer ul li a {
+  color: #eee;
+  text-decoration: none;
+}
+
+footer p {
+  text-align: center;
+  margin-top: 20px;
+  color: #b0b0b0;
+}
+
+/* Styles for blog posts content */
+.blog-posts {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 22px;
+  max-width: 1200px;
+  margin: 70px auto;
+  padding: 0 20px;
+}
+
+.post-card {
+  border: 1px solid #ccc;
+  padding: 16px;
+  border-radius: 8px;
+  background: #fff;
+  transition: transform 0.2s;
+}
+
+.post-card:hover {
+  transform: scale(1.03);
+}
+
+.post-card img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px 8px 0 0;
+}
+
+.post-card h2 a {
+  text-decoration: none;
+  color: #000;
+}
+
+/* Styles for blog post content */
+.blog-post {
+  margin: 20px;
+  padding: 20px 20px 50px;
+  background-color: #f9f9f9;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.blog-post header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.blog-post header h1 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.blog-post header p {
+  font-size: 14px;
+  color: #777;
+}
+
+.blog-post figure {
+  text-align: center;
+  margin-right: 30px;
+}
+
+.author-info {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.author-info img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+}
+
+.author-info h2 {
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+
+.author-info p {
+  font-size: 14px;
+  color: #777;
+}
+
+.post-content p {
+  font-size: 16px;
+  line-height: 1.6;
+  margin-bottom: 15px;
+}
+
+.social-sharing a {
+  margin-right: 10px;
+}
+
+/* Responsive Styles */
+@media (min-width: 767px) {
+  header .toggle-menu {
+    display: none;
+  }
+}
+
+@media (max-width: 767px) {
+  .blog-post {
+    padding: 15px;
+  }
+
+  .author-info {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .author-info figure {
+    margin-bottom: 20px;
+  }
+
+  header nav ul {
+    padding: 10px 0;
+    display: none;
+  }
+
+  header .toggle-menu:hover + ul {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color: rgb(0 0 0 / 50%);
+  }
+
+  header nav ul li a {
+    padding: 20px !important;
+  }
+
+  header nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 10px;
+  }
+
+  .logo,
+  .search {
+    order: 1;
+  }
+
+  .toggle-menu {
+    display: block;
+    cursor: pointer;
+    order: 2;
+    justify-self: start;
+  }
+
+  .search {
+    justify-self: center;
+    display: flex;
+  }
+}
