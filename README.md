@@ -1,2 +1,2 @@
 # Demo
-[Preview the design here](https://ayman-dwikat.github.io/Personal_Blog/)
+[Preview the design here](https://ayman-dwikat.github.io/Personal-Blog/)
