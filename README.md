@@ -24,4 +24,4 @@ This project is a personal blog design created using **HTML** and **CSS** only, 
 - **Formatting Rules:** Proper HTML and CSS formatting and style rules are followed, maintaining code clarity and readability.
 
 ### Demo
-- [Preview the design here](https://ayman-dwikat.github.io/Personal-Blog/)
+- [Preview the design here](https://aymandwikat.github.io/Personal-Blog/)
